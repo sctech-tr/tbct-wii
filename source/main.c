@@ -27,7 +27,7 @@ int main(int argc, char **argv) {
 	printf("\x1b[2;0H");
 	int homebutton = 0;
     // -------------------------------------------
-	printf("Text-based Controller Test v0.7-alpha\n");
+	printf("Text-based Controller Test v1.1\n");
 	printf("Welcome! This is a really simple app that allows you to test your controllers\n");
 	printf("Press the HOME button 3 times to exit.\n");
 
@@ -117,6 +117,43 @@ int main(int argc, char **argv) {
 		    }
 		}
 		
+		if(exp_type == WPAD_EXP_GUITARHERO3) {
+		    if(pressed & WPAD_GUITAR_HERO_3_BUTTON_STRUM_UP) {
+		        printf("Guitar Hero 3 Controller: Button up pressed.\n");
+		    }
+			
+			if(pressed & WPAD_GUITAR_HERO_3_BUTTON_STRUM_DOWN) {
+		        printf("Guitar Hero 3 Controller: Button down pressed.\n");
+		    }
+			
+			if(pressed & WPAD_GUITAR_HERO_3_BUTTON_PLUS) {
+		        printf("Guitar Hero 3 Controller: Button + pressed.\n");
+		    }
+			
+			if(pressed & WPAD_GUITAR_HERO_3_BUTTON_MINUS) {
+		        printf("Guitar Hero 3 Controller: Button - pressed.\n");
+		    }
+			
+			if(pressed & WPAD_GUITAR_HERO_3_BUTTON_ORANGE) {
+		        printf("Guitar Hero 3 Controller: Orange button pressed.\n");
+		    }
+			
+			if(pressed & WPAD_GUITAR_HERO_3_BUTTON_RED) {
+		        printf("Guitar Hero 3 Controller: Red button pressed.\n");
+		    }
+			
+			if(pressed & WPAD_GUITAR_HERO_3_BUTTON_YELLOW) {
+		        printf("Guitar Hero 3 Controller: Yellow button pressed.\n");
+		    }
+			
+			if(pressed & WPAD_GUITAR_HERO_3_BUTTON_BLUE) {
+		        printf("Guitar Hero 3 Controller: Blue button pressed.\n");
+		    }
+			
+			if(pressed & WPAD_GUITAR_HERO_3_BUTTON_GREEN) {
+		        printf("Guitar Hero 3 Controller: Green button pressed.\n");
+		    }
+		}
 		
 		
 		if(gcpressed & PAD_BUTTON_A) {
