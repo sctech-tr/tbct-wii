@@ -28,7 +28,7 @@ int main(int argc, char **argv) {
 	int classic = 0;
 	int gh3 = 0;
     // -------------------------------------------
-	printf("Text-based Controller Test v1.2\n");
+	printf("Text-based Controller Test v1.3\n");
 	printf("Welcome! This is a simple app that allows you to test your controllers!\n");
 	printf("Press the HOME button 3 times to exit.\n");
 
@@ -188,6 +188,10 @@ int main(int argc, char **argv) {
 		if(gcpressed & PAD_TRIGGER_Z) {
 			printf("GameCube Controller: Z trigger pressed.\n");
 		}
+
+		if(gcpressed & PAD_BUTTON_Y) {
+			printf("GameCube Controller: Button Y pressed.\n");
+		}
 		
 		if(gcpressed & PAD_TRIGGER_L) {
 			printf("GameCube Controller: L trigger pressed.\n");
@@ -271,6 +275,7 @@ int main(int argc, char **argv) {
 			
         
 	}
-
+	
+	// we should never get here. this is just to make the compiler happy.
 	return 0;
 }
